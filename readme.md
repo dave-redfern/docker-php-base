@@ -6,17 +6,29 @@ An Alpine 3.9 based container geared for extending for other usages. Contains:
 
 PHP is installed with:
 
- * igbinary
- * opcache / apcu
- * xml libs
  * curl
  * iconv, mbstring, gettext, intl
+ * opcache, apcu & igbinary
+ * xml & json libs
+ * sqlite, pdo
  
 And a few others.
 
 Note:
 
  * only sqlite has been loaded, add MySQL / Postgres if you need them
+ 
+In addition the follow are available:
+
+ * bash
+ * curl
+ * tini
+ * unzip
+ * wget
+
+Note:
+
+If you need to install from custom git repos, be sure to setup git.
  
 ## Intended Usage
 

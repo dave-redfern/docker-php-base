@@ -13,8 +13,8 @@ RUN apk --update add ca-certificates \
     && apk upgrade \
     && apk --no-cache add -U \
     # Packages
+    bash \
     curl \
-    git \
     openssl \
     tini \
     unzip \
