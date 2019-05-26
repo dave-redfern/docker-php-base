@@ -66,7 +66,6 @@ RUN curl --silent --fail --location --retry 3 --output /tmp/installer.php --url 
     }" \
  && php /tmp/installer.php --no-ansi --install-dir=/usr/bin --filename=composer \
  && composer --ansi --version --no-interaction \
- && rm -f /tmp/installer.php \
- && find /tmp -type d -exec chmod -v 1777 {} +.gitignore
+ && rm -f /tmp/installer.php
 
 ENTRYPOINT ["/sbin/tini", "--"]
