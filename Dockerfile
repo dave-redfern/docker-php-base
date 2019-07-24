@@ -27,6 +27,7 @@ RUN apk --update add ca-certificates \
     php7-ctype \
     php7-curl \
     php7-dom \
+    php7-fileinfo \
     php7-gettext \
     php7-iconv \
     php7-intl \
