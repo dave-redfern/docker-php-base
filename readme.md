@@ -1,6 +1,6 @@
 # PHP Base Image
 
-An Alpine 3.9 based container geared for extending for other usages. Contains:
+An Alpine based container geared for extending for other usages. Contains:
 
  * composer
 
@@ -13,6 +13,10 @@ PHP is installed with:
  * sqlite, pdo
  
 And a few others.
+
+### Tags
+
+This project is tagged for PHP 7.2 (7.2.X) and PHP 7.3.X. PHP 7.3 uses Alpine 3.10.
 
 Note:
 
