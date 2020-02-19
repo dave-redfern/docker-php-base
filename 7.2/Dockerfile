@@ -43,6 +43,7 @@ RUN apk --update add ca-certificates \
     php7-phar \
     php7-session \
     php7-simplexml \
+    php7-socket \
     php7-sodium \
     php7-sqlite3 \
     php7-tokenizer \

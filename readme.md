@@ -7,7 +7,7 @@ An Alpine based container geared for extending for other usages. Contains:
 PHP is installed with:
 
  * curl
- * iconv, mbstring, gettext, intl
+ * iconv, mbstring, gettext, intl, socket
  * opcache, apcu & igbinary
  * xml & json libs
  * sqlite, pdo
