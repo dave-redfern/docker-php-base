@@ -16,7 +16,7 @@ And a few others.
 
 ### Tags
 
-This project is tagged for PHP 7.2 (7.2.X) and PHP 7.3.X. PHP 7.3 uses Alpine 3.10.
+This project is tagged for PHP 7.2 (7.2.X) and PHP 7.3.X. PHP 7.3 uses Alpine 3.11.
 
 Note:
 
