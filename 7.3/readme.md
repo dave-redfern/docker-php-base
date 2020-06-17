@@ -1,6 +1,6 @@
 # PHP Base Image
 
-An Alpine based container geared for extending for other usages. Contains:
+An Alpine 3.12 based container geared for extending for other usages. Contains:
 
  * composer
 
@@ -11,12 +11,6 @@ PHP is installed with:
  * opcache, apcu & igbinary
  * xml & json libs
  * sqlite, pdo
- 
-And a few others.
-
-### Tags
-
-This project is tagged for PHP 7.2 (7.2.X) and PHP 7.3.X. PHP 7.3 uses Alpine 3.10.
 
 Note:
 
@@ -26,6 +20,7 @@ In addition the follow are available:
 
  * bash
  * curl
+ * nano
  * tini
  * unzip
  * wget
@@ -39,7 +34,7 @@ If you need to install from custom git repos, be sure to setup git.
 Import from this image and add additional setup steps to build your app. For example:
 
 ```dockerfile
-FROM somnambulist/php-base:latest
+FROM somnambulist/php-base:7.3-latest
 
 RUN apk --update add ca-certificates \
     && apk update \

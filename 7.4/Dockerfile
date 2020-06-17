@@ -4,7 +4,7 @@
 # Bundles composer
 #
 
-FROM alpine:3.12
+FROM alpine:edge
 ENV COMPOSER_ALLOW_SUPERUSER 1
 ENV COMPOSER_HOME /tmp
 

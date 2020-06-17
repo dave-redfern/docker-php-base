@@ -1,6 +1,6 @@
-# PHP 7.2 Base Image
+# PHP Base Image
 
-An Alpine 3.9 based container geared for extending for other usages. Contains:
+An Alpine Edge based container geared for extending for other usages. Contains:
 
  * composer
 
@@ -34,7 +34,7 @@ If you need to install from custom git repos, be sure to setup git.
 Import from this image and add additional setup steps to build your app. For example:
 
 ```dockerfile
-FROM somnambulist/php-base:7.2-latest
+FROM somnambulist/php-base:7.4-latest
 
 RUN apk --update add ca-certificates \
     && apk update \

@@ -15,6 +15,7 @@ RUN apk --update add ca-certificates \
     # Packages
     bash \
     curl \
+    nano \
     openssl \
     tini \
     unzip \
