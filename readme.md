@@ -13,7 +13,7 @@ This base provides:
 Import from this image and add additional setup steps to build your app. For example:
 
 ```dockerfile
-FROM somnambulist/php-base:7.3-latest
+FROM somnambulist/php-base:7.4-latest
 
 RUN apk --update add ca-certificates \
     && apk update \
