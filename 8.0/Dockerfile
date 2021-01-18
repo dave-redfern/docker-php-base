@@ -20,42 +20,43 @@ RUN apk --update add ca-certificates \
     tini \
     unzip \
     wget \
-    php7 \
-    php7-common \
-    php7-bcmath \
-    php7-bz2 \
-    php7-calendar \
-    php7-ctype \
-    php7-curl \
-    php7-dom \
-    php7-fileinfo \
-    php7-gettext \
-    php7-iconv \
-    php7-intl \
-    php7-json \
-    php7-mbstring \
-    php7-opcache \
-    php7-openssl \
-    php7-pdo \
-    php7-pdo_sqlite \
-    php7-pecl-apcu \
-    php7-pecl-igbinary \
-    php7-pecl-redis \
-    php7-phar \
-    php7-session \
-    php7-simplexml \
-    php7-sockets \
-    php7-sodium \
-    php7-sqlite3 \
-    php7-tokenizer \
-    php7-xml \
-    php7-xmlreader \
-    php7-xmlwriter \
-    php7-xsl \
-    php7-zip \
-    php7-zlib \
+    php8 \
+    php8-common \
+    php8-bcmath \
+    php8-bz2 \
+    php8-calendar \
+    php8-ctype \
+    php8-curl \
+    php8-dom \
+    php8-fileinfo \
+    php8-gettext \
+    php8-iconv \
+    php8-intl \
+    php8-json \
+    php8-mbstring \
+    php8-opcache \
+    php8-openssl \
+    php8-pdo \
+    php8-pdo_sqlite \
+    php8-pecl-apcu \
+    php8-pecl-igbinary \
+    php8-pecl-redis \
+    php8-phar \
+    php8-session \
+    php8-simplexml \
+    php8-sockets \
+    php8-sodium \
+    php8-sqlite3 \
+    php8-tokenizer \
+    php8-xml \
+    php8-xmlreader \
+    php8-xmlwriter \
+    php8-xsl \
+    php8-zip \
+    php8-zlib \
 	# Clean up
-    && rm -rf /var/cache/apk/* /tmp/*
+    && rm -rf /var/cache/apk/* /tmp/* \
+    && ln -s /usr/bin/php8 /usr/bin/php && php -v
 
 # setup composer -- taken from the composer docker installer code
 RUN curl --silent --fail --location --retry 3 --output /tmp/installer.php --url https://raw.githubusercontent.com/composer/getcomposer.org/cb19f2aa3aeaa2006c0cd69a7ef011eb31463067/web/installer \

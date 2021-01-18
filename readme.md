@@ -6,7 +6,8 @@ This base provides:
 
  * 7.2 (Alpine 3.9)
  * 7.3 (Alpine 3.12)
- * 7.4 (from Alpine Edge as of 2020-06-17)
+ * 7.4 (Alpine 3.13)
+ * 8.0 (Alpine 3.13)
 
 ## Intended Usage
 
@@ -22,6 +23,7 @@ RUN apk --update add ca-certificates \
     php7-pdo-pgsql \
     && rm -rf /var/cache/apk/* /tmp/*
 
+RUN composer selfupdate
 ```
 
 A `.dockerignore` should be setup to prevent copying in git and vendor files:
