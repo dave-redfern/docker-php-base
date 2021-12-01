@@ -4,17 +4,16 @@ A set of PHP base images that use Alpine packages for easier setup / customisati
 
 This base provides:
 
- * 7.2 (Alpine 3.9)
  * 7.3 (Alpine 3.12)
  * 7.4 (Alpine 3.13)
- * 8.0 (Alpine 3.13)
+ * 8.0 (Alpine 3.15)
 
 ## Intended Usage
 
 Import from this image and add additional setup steps to build your app. For example:
 
 ```dockerfile
-FROM somnambulist/php-base:7.4-latest
+FROM somnambulist/php-base:8.0-latest
 
 RUN apk --update add ca-certificates \
     && apk update \
