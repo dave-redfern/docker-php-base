@@ -4,9 +4,9 @@ A set of PHP base images that use Alpine packages for easier setup / customisati
 
 This base provides:
 
- * 7.3 (Alpine 3.12)
- * 7.4 (Alpine 3.13)
+ * 7.4 (Alpine 3.15)
  * 8.0 (Alpine 3.15)
+ * 8.1 (Alpine Edge + Testing)
 
 ## Intended Usage
 

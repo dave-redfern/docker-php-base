@@ -1,6 +1,6 @@
 # PHP Base Image
 
-An Alpine Edge based container geared for extending for other usages. Contains:
+An Alpine based container geared for extending for other usages. Contains:
 
  * composer
 
@@ -34,13 +34,13 @@ If you need to install from custom git repos, be sure to setup git.
 Import from this image and add additional setup steps to build your app. For example:
 
 ```dockerfile
-FROM somnambulist/php-base:7.4-latest
+FROM somnambulist/php-base:8.0-latest
 
 RUN apk --update add ca-certificates \
     && apk update \
     && apk upgrade \
     && apk --no-cache add -U \
-    php7-pdo-pgsql \
+    php8-pdo-pgsql \
     && rm -rf /var/cache/apk/* /tmp/*
 
 RUN composer selfupdate
