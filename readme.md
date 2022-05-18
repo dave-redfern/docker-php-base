@@ -6,7 +6,7 @@ This base provides:
 
  * 7.4 (Alpine 3.15)
  * 8.0 (Alpine 3.15)
- * 8.1 (Alpine Edge + Testing)
+ * 8.1 (Alpine Edge + Community)
 
 ## Intended Usage
 
@@ -19,7 +19,7 @@ RUN apk --update add ca-certificates \
     && apk update \
     && apk upgrade \
     && apk --no-cache add -U \
-    php7-pdo-pgsql \
+    php8-pdo-pgsql \
     && rm -rf /var/cache/apk/* /tmp/*
 
 RUN composer selfupdate
