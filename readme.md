@@ -6,7 +6,7 @@ This base provides:
 
  * 7.4 (Alpine 3.15)
  * 8.0 (Alpine 3.15)
- * 8.1 (Alpine Edge + Community)
+ * 8.1 (Alpine 3.16)
 
 ## Intended Usage
 

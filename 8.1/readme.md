@@ -1,6 +1,6 @@
 # PHP Base Image
 
-An Alpine Edge based container geared for extending for other usages. Contains:
+An Alpine 3.16 based container geared for extending for other usages. Contains:
 
  * composer
 

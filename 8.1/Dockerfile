@@ -4,12 +4,11 @@
 # Bundles composer
 #
 
-FROM alpine:edge
+FROM alpine:3.16
 ENV COMPOSER_ALLOW_SUPERUSER 1
 ENV COMPOSER_HOME /tmp
 
 RUN apk --update add ca-certificates \
-    && echo "https://dl-cdn.alpinelinux.org/alpine/edge/community/" >> /etc/apk/repositories \
     && apk update \
     && apk upgrade \
     && apk --no-cache add -U \
