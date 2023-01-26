@@ -4,7 +4,7 @@ A set of PHP base images that use Alpine packages for easier setup / customisati
 
 This base provides:
 
- * 8.0 (Alpine 3.17)
+ * 8.0 (Alpine 3.16)
  * 8.1 (Alpine 3.17)
  * 8.2 (Alpine Edge)
 

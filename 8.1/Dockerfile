@@ -56,7 +56,7 @@ RUN apk --update add ca-certificates \
     php81-zlib \
 	# Clean up
     && rm -rf /var/cache/apk/* /tmp/* \
-    && ln -s /usr/bin/php81 /usr/bin/php && php -v
+    && php -v
 
 # setup composer -- taken from the composer docker installer code
 RUN curl --silent --fail --location --retry 3 --output /tmp/installer.php --url https://raw.githubusercontent.com/composer/getcomposer.org/cb19f2aa3aeaa2006c0cd69a7ef011eb31463067/web/installer \
