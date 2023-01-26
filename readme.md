@@ -4,9 +4,9 @@ A set of PHP base images that use Alpine packages for easier setup / customisati
 
 This base provides:
 
- * 7.4 (Alpine 3.15)
- * 8.0 (Alpine 3.15)
- * 8.1 (Alpine 3.16)
+ * 8.0 (Alpine 3.17)
+ * 8.1 (Alpine 3.17)
+ * 8.2 (Alpine Edge)
 
 ## Intended Usage
 
@@ -24,6 +24,9 @@ RUN apk --update add ca-certificates \
 
 RUN composer selfupdate
 ```
+
+If you require multiple locales be sure to add `icu-data-full` to the `apk add` list. This will increase the
+size of your image.
 
 A `.dockerignore` should be setup to prevent copying in git and vendor files:
 

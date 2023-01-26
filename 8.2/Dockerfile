@@ -4,11 +4,12 @@
 # Bundles composer
 #
 
-FROM alpine:3.15
+FROM alpine:edge
 ENV COMPOSER_ALLOW_SUPERUSER 1
 ENV COMPOSER_HOME /tmp
 
 RUN apk --update add ca-certificates \
+    && echo "https://dl-cdn.alpinelinux.org/alpine/edge/testing/" >> /etc/apk/repositories \
     && apk update \
     && apk upgrade \
     && apk --no-cache add -U \
@@ -20,42 +21,43 @@ RUN apk --update add ca-certificates \
     tini \
     unzip \
     wget \
-    php7 \
-    php7-common \
-    php7-bcmath \
-    php7-bz2 \
-    php7-calendar \
-    php7-ctype \
-    php7-curl \
-    php7-dom \
-    php7-fileinfo \
-    php7-gettext \
-    php7-iconv \
-    php7-intl \
-    php7-json \
-    php7-mbstring \
-    php7-opcache \
-    php7-openssl \
-    php7-pdo \
-    php7-pdo_sqlite \
-    php7-pecl-apcu \
-    php7-pecl-igbinary \
-    php7-pecl-redis \
-    php7-phar \
-    php7-session \
-    php7-simplexml \
-    php7-sockets \
-    php7-sodium \
-    php7-sqlite3 \
-    php7-tokenizer \
-    php7-xml \
-    php7-xmlreader \
-    php7-xmlwriter \
-    php7-xsl \
-    php7-zip \
-    php7-zlib \
+    php82 \
+    php82-common \
+    php82-bcmath \
+    php82-bz2 \
+    php82-calendar \
+    php82-ctype \
+    php82-curl \
+    php82-dom \
+    php82-fileinfo \
+    php82-gettext \
+    php82-iconv \
+    php82-intl \
+    php82-json \
+    php82-mbstring \
+    php82-opcache \
+    php82-openssl \
+    php82-pdo \
+    php82-pdo_sqlite \
+    php82-pecl-apcu \
+    php82-pecl-igbinary \
+    php82-pecl-redis \
+    php82-phar \
+    php82-session \
+    php82-simplexml \
+    php82-sockets \
+    php82-sodium \
+    php82-sqlite3 \
+    php82-tokenizer \
+    php82-xml \
+    php82-xmlreader \
+    php82-xmlwriter \
+    php82-xsl \
+    php82-zip \
+    php82-zlib \
 	# Clean up
-    && rm -rf /var/cache/apk/* /tmp/*
+    && rm -rf /var/cache/apk/* /tmp/* \
+    && ln -s /usr/bin/php82 /usr/bin/php && php -v
 
 # setup composer -- taken from the composer docker installer code
 RUN curl --silent --fail --location --retry 3 --output /tmp/installer.php --url https://raw.githubusercontent.com/composer/getcomposer.org/cb19f2aa3aeaa2006c0cd69a7ef011eb31463067/web/installer \
