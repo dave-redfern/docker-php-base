@@ -16,7 +16,7 @@ Note:
 
  * only sqlite has been loaded, add MySQL / Postgres if you need them
  
-In addition the follow are available:
+In addition, the follow are available:
 
  * bash
  * curl

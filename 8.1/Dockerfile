@@ -4,7 +4,7 @@
 # Bundles composer
 #
 
-FROM alpine:3.17
+FROM alpine:3.19
 ENV COMPOSER_ALLOW_SUPERUSER 1
 ENV COMPOSER_HOME /tmp
 
@@ -56,6 +56,7 @@ RUN apk --update add ca-certificates \
     php81-zlib \
 	# Clean up
     && rm -rf /var/cache/apk/* /tmp/* \
+    && ln -sf /usr/bin/php81 /usr/bin/php \
     && php -v
 
 # setup composer -- taken from the composer docker installer code

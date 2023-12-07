@@ -16,7 +16,7 @@ Note:
 
  * only sqlite has been loaded, add MySQL / Postgres if you need them
  
-In addition the follow are available:
+In addition, the follow are available:
 
  * bash
  * curl
@@ -34,13 +34,13 @@ If you need to install from custom git repos, be sure to setup git.
 Import from this image and add additional setup steps to build your app. For example:
 
 ```dockerfile
-FROM somnambulist/php-base:8.1-latest
+FROM somnambulist/php-base:8.2-latest
 
 RUN apk --update add ca-certificates \
     && apk update \
     && apk upgrade \
     && apk --no-cache add -U \
-    php81-pdo-pgsql \
+    php82-pdo-pgsql \
     && rm -rf /var/cache/apk/* /tmp/*
 
 RUN composer selfupdate
